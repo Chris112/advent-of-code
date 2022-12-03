@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node 2022/2/part2"
+    "start": "ts-node 2022/3/part2"
   },
   "keywords": [],
   "author": "",
