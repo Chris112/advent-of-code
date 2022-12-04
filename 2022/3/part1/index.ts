@@ -4,7 +4,6 @@ import { sumNumberArray } from "../../../helpers";
 async function main() {
   const data = await fs.readFile(`${__dirname}/../inputs.txt`, "utf-8");
   const lines = data.split("\n");
-  console.log(lines);
 
   const commonChars: string[] = [];
 
