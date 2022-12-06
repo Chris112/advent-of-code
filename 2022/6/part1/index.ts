@@ -7,8 +7,6 @@ async function main() {
 
   for (let i = 0; i < stream.length; i++) {
     const window = stream.slice(i, i + WINDOW_SIZE);
-    if (window.length !== WINDOW_SIZE) return;
-
     // Check if all chars in window are unique
     const uniqueChars = new Set(window);
     // console.log("Looking at chars %o", uniqueChars)

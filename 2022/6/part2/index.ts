@@ -7,15 +7,9 @@ async function main() {
 
   for (let i = 0; i < stream.length; i++) {
     const window = stream.slice(i, i + WINDOW_SIZE);
-    if (window.length !== WINDOW_SIZE) {
-      console.log("WINDOW IS NOT OF SIZE %o", WINDOW_SIZE);
-      return;
-    }
-
     // Check if all chars in window are unique
     const uniqueChars = new Set(window);
-    // console.log("Looking at chars %o", uniqueChars)
-    if (uniqueChars.size !== 14) continue;
+    if (uniqueChars.size !== WINDOW_SIZE) continue;
 
     console.log("All chars are unique at index %o", i + window.length);
     return;
